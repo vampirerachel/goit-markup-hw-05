@@ -407,7 +407,7 @@ img {
 }
 .portfolio-item:hover,
 .portfolio-item:focus{
-    border: 1px solid #EEEEEE;
+    
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -681,7 +681,21 @@ transform: translateY(100%);
     pointer-events: none;
 }
 .modal-button {
-    margin-top: 8px;
-    margin-left: 490px;
+    position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            margin-top:10px;
+            margin-left: 490px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1px solid rgba(0, 0, 0, 0.1)
+}
+.modal-button:hover,
+.modal-button:focus{
+ cursor: pointer;
+box-shadow: 0px 0px 15px var(--text-color-secondary)
 }
 
